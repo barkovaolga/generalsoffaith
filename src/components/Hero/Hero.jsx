@@ -1,6 +1,6 @@
 import "./Hero.scss";
 import hero1Image from "../../assets/hero1.jpg";
-
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="hero">
@@ -20,7 +20,9 @@ function Hero() {
             Евр 13:7
           </p>
 
-          <button className="hero__button">Смотреть проповеди</button>
+          <Link to="/videos" className="hero__button">
+            Смотреть проповеди
+          </Link>
         </div>
       </div>
     </section>

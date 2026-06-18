@@ -1,5 +1,5 @@
 import "./HomeBooks.scss";
-
+import { Link } from "react-router-dom";
 import lesterBook from "../../assets/images/books/lester.png";
 import oralBook from "../../assets/images/books/oral.png";
 import haginBook from "../../assets/images/books/heygin.png";
@@ -64,14 +64,9 @@ function HomeBooks() {
             </article>
           ))}
         </div>
-        <a
-          href="https://www.youtube.com/@generalsoffaith"
-          target="_blank"
-          rel="noreferrer"
-          className="videos__mobile-btn btn"
-        >
+        <Link to="/books" className="videos__mobile-btn btn">
           Смотреть все
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -78,7 +78,7 @@ function HomeGenerals() {
           ))}
         </div>
         <a
-          href="https://www.youtube.com/@generalsoffaith"
+          href="#"
           target="_blank"
           rel="noreferrer"
           className="videos__mobile-btn btn"

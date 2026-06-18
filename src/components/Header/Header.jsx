@@ -83,13 +83,13 @@ function Header() {
             </li>
 
             <li className="header__menu-item">
-              <Link
+              {/* <Link
                 to="/about"
                 className="header__menu-link"
                 onClick={() => setMenuOpen(false)}
               >
                 О нас
-              </Link>
+              </Link> */}
             </li>
           </ul>
 
