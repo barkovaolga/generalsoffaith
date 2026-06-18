@@ -8,7 +8,7 @@ import Books from "./pages/Books/Books";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/generalsoffaith">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />} />
