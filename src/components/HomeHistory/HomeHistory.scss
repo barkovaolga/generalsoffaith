@@ -1,0 +1,91 @@
+@use "../../styles/vars" as v;
+@use "../../styles/mixins" as m;
+
+.history {
+  padding: 20px 0;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  &__slider {
+    display: none !important;
+  }
+  &-card {
+    background: #f6f4f1;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 540px;
+    &__period {
+      position: relative;
+      padding: 24px 7px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @include m.text-title(20px, 700, 17px, 0.5px);
+      &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #a98342;
+        flex-shrink: 0;
+      }
+    }
+
+    &__title {
+      margin-top: 22px;
+      margin-left: 7px;
+      text-transform: uppercase;
+      @include m.text-title(20px, 700, 24px, 0.5px);
+    }
+
+    &__description {
+      color: #000000;
+      margin-left: 7px;
+      @include m.text-title(14px, 500, 20px, 0.5px);
+      margin-top: auto;
+    }
+
+    &__image {
+      margin-top: auto;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .history__grid {
+    display: none;
+  }
+
+  .history__slider {
+    display: block !important;
+  }
+}
+.swiper-slide {
+  width: 216px !important;
+  margin-right: 17px !important;
+}
+.history-card {
+  &__title {
+    margin-top: 22px;
+    margin-left: 7px;
+    text-transform: uppercase;
+    @include m.text-title(17px, 700, 24px, 0.5px);
+  }
+
+  &__description {
+    color: #000000;
+    margin-left: 7px;
+    @include m.text-title(14px, 500, 20px, 0.5px);
+    margin-top: auto;
+  }
+}

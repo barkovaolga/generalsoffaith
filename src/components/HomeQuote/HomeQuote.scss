@@ -1,0 +1,72 @@
+.quote-banner {
+  padding: 0;
+  margin-top: 20px;
+
+  background: url("../../assets/images/quote-banner.png") center/cover no-repeat;
+
+  min-height: 390px;
+
+  display: flex;
+  align-items: center;
+
+  .container {
+    width: 100%;
+  }
+
+  &__content {
+    max-width: 680px;
+  }
+
+  &__text {
+    margin: 0 0 56px;
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 2px;
+  }
+
+  &__author {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 24px;
+    font-style: normal;
+  }
+}
+@media (max-width: 769px) {
+  .quote-banner {
+    background-position: 72% center;
+    &__content {
+      max-width: 480px;
+    }
+
+    &__text {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 44px;
+      letter-spacing: 2px;
+    }
+  }
+}
+@media (max-width: 769px) {
+  .quote-banner {
+    min-height: 255px;
+    &__text {
+      font-size: 17px;
+      line-height: 30px;
+      letter-spacing: 1px;
+    }
+    &__author {
+      font-size: 16px;
+    }
+
+    .quote-banner__content {
+      max-width: 281px;
+    }
+    .quote-banner {
+      background-position: 72% center;
+    }
+  }
+}

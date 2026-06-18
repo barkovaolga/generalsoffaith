@@ -1,0 +1,136 @@
+@use "../../styles/vars" as v;
+@use "../../styles/mixins" as m;
+.videos {
+  padding: 20px 0;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__thumbnail {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      aspect-ratio: 16 / 9;
+      background: #ddd;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &__title {
+      @include m.text-title(14px, 500, 24px, 0px);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 30px;
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+  &__title {
+    text-transform: uppercase;
+    @include m.text-title(36px, 600, 44px, 0.5px);
+    @media (max-width: 768px) {
+      @include m.text-title(26px, 600, 44px, 0.5px);
+    }
+    @media (max-width: 425px) {
+      @include m.text-title(22px, 600, 44px, 0.5px);
+    }
+  }
+  &__button {
+    flex-shrink: 0;
+    @include m.text-title(16px, 700, 24px, 0px);
+  }
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 270px;
+  height: 56px;
+
+  padding: 0 32px;
+  color: #000;
+  border: 3px solid #9b7845;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  @include m.text-title(16px, 700, 24px, 0px);
+  &:hover {
+    background: #9b7845;
+    color: #fff;
+  }
+  @media (max-width: 768px) {
+    min-width: 250px;
+    height: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .videos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .video-card:last-child {
+    display: none;
+  }
+}
+.videos__mobile-btn {
+  display: none;
+}
+@media (max-width: 600px) {
+  .section-header__button {
+    display: none;
+  }
+
+  .videos__mobile-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 56px;
+
+    margin-top: 24px;
+
+    text-decoration: none;
+  }
+}
+@media (max-width: 500px) {
+  .video-card:nth-child(3) {
+    display: none;
+  }
+  .videos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

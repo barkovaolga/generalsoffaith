@@ -1,0 +1,17 @@
+@use "./vars" as *;
+
+@mixin text-title($size, $weight: 600, $line-height: 28px, $letter-spacing: 0) {
+  font-family: $font-title;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin text($size, $weight: 400, $line-height: 40px, $letter-spacing: 0) {
+  font-family: $font-text;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
