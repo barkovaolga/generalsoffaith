@@ -55,7 +55,10 @@ function HomeGenerals() {
         <div className="section-header">
           <h2 className="section-header__title">Гиганты духа</h2>
 
-          <button className="section-header__button btn">Смотреть всех</button>
+          <button className="section-header__button btn">
+            Смотреть всех
+            <span className="btn__arrow">→</span>
+          </button>
         </div>
 
         <div className="general__grid">

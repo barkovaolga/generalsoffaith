@@ -5,10 +5,12 @@ import Videos from "./pages/Videos/Videos";
 import Biographies from "./pages/Biographies/Biographies";
 import Community from "./pages/Community/Community";
 import Books from "./pages/Books/Books";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter basename="/generalsoffaith">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />} />

@@ -65,9 +65,9 @@ function BooksGrid() {
             <div className="book-card" key={index}>
               <img src={book.image} alt={book.title} />
 
-              <h3>{book.title}</h3>
+              <h3 className="book-card__title">{book.title}</h3>
 
-              <p>{book.author}</p>
+              <p className="book-card__author">{book.author}</p>
             </div>
           ))}
         </div>

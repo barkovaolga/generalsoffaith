@@ -53,6 +53,7 @@ function HomeHistory() {
 
           <button className="section-header__button btn">
             Исследовать эпохи
+            <span className="btn__arrow">→</span>
           </button>
         </div>
 

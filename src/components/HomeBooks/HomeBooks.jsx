@@ -46,9 +46,10 @@ function HomeBooks() {
         <div className="section-header">
           <h2 className="section-header__title">Популярные книги</h2>
 
-          <button className="section-header__button btn" to="/books">
+          <Link to="/books" className="section-header__button btn">
             Смотреть все
-          </button>
+            <span className="btn__arrow">→</span>
+          </Link>
         </div>
 
         <div className="book__grid">
@@ -58,9 +59,9 @@ function HomeBooks() {
                 <img src={book.image} alt={book.title} />
               </div>
 
-              <h3 className="book-card__author">{book.author}</h3>
+              <h3 className="book-card__title">{book.title}</h3>
 
-              <p className="book-card__title">{book.title}</p>
+              <p className="book-card__author">{book.author}</p>
             </article>
           ))}
         </div>

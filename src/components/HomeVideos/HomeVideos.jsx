@@ -29,6 +29,7 @@ function HomeVideos() {
             className="section-header__button btn"
           >
             Перейти на канал
+            <span className="btn__arrow">→</span>
           </a>
         </div>
 
