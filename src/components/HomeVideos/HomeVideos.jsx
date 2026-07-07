@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getVideos } from "../../services/youtube";
 import VideoCard from "../VideoCard/VideoCard";
 import "./HomeVideos.scss";
+import { ArrowRight } from "lucide-react";
 
 function HomeVideos() {
   const [videos, setVideos] = useState([]);
@@ -29,7 +30,7 @@ function HomeVideos() {
             className="section-header__button btn"
           >
             Перейти на канал
-            <span className="btn__arrow">→</span>
+            <ArrowRight className="btn__arrow" size={22} strokeWidth={2} />
           </a>
         </div>
 

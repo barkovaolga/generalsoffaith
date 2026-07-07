@@ -6,6 +6,7 @@ import haginBook from "../../assets/images/books/heygin.png";
 import andrewBook from "../../assets/images/books/endry.png";
 import hayesBook from "../../assets/images/books/heys.png";
 import kennetBook from "../../assets/images/books/kennet.png";
+import { ArrowRight } from "lucide-react";
 const books = [
   {
     author: "Лестер Самралл",
@@ -48,7 +49,7 @@ function HomeBooks() {
 
           <Link to="/books" className="section-header__button btn">
             Смотреть все
-            <span className="btn__arrow">→</span>
+            <ArrowRight className="btn__arrow" size={22} strokeWidth={2} />
           </Link>
         </div>
 

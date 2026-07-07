@@ -1,7 +1,7 @@
 import "./HomeHistory.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
+import { ArrowRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import history1 from "../../assets/images/history/1.png";
@@ -53,7 +53,7 @@ function HomeHistory() {
 
           <button className="section-header__button btn">
             Исследовать эпохи
-            <span className="btn__arrow">→</span>
+            <ArrowRight className="btn__arrow" size={22} strokeWidth={2} />
           </button>
         </div>
 

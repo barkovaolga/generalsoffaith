@@ -6,6 +6,7 @@ import ketrinImg from "../../assets/images/generals/ketrin.png";
 import jonImg from "../../assets/images/generals/jon.png";
 import oralImg from "../../assets/images/generals/oral.png";
 import devidImg from "../../assets/images/generals/devid.png";
+import { ArrowRight } from "lucide-react";
 
 const generals = [
   {
@@ -57,7 +58,7 @@ function HomeGenerals() {
 
           <button className="section-header__button btn">
             Смотреть всех
-            <span className="btn__arrow">→</span>
+            <ArrowRight className="btn__arrow" size={22} strokeWidth={2} />
           </button>
         </div>
 
